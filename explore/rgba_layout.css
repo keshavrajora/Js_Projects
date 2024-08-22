@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+
+
+html {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+   height: 100%;
+   font-size: 18px;
+   color: rgb(101, 101, 101);
+}
+
+body {
+   padding: 50px;
+   position: relative;
+}
+
+h1 {
+   font-weight: normal;
+   font-size: 2.4em;
+   margin-top: 10px;
+   margin-left: 110px;
+   padding-bottom: 40px;
+}
+
+label {
+   display: inline-block;
+   width: 90px;
+}
+
+div#redContainer, div#greenContainer, div#blueContainer {
+   margin-bottom: 10px;
+}
+
+div#redContainer {
+   margin-top: 50px;
+}
+div#redBox {
+   display: inline-block;
+   background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); 
+   padding: 3px;
+   width: 230px;
+   border: 1px solid rgb(191, 191, 191);
+}
+
+div#greenBox {
+   display: inline-block;
+   background: linear-gradient(to right, rgba(0, 255, 0, 0), rgba(0, 255, 0, 1)); 
+   padding: 3px;
+   width: 230px;
+   border: 1px solid rgb(191, 191, 191);
+}
+
+div#blueBox {
+   display: inline-block;
+   background: linear-gradient(to right, rgba(0, 0, 255, 0), rgba(0, 0, 255, 1)); 
+   padding: 3px;
+   width: 230px;
+   border: 1px solid rgb(191, 191, 191);
+}
+
+div#alphaBox {
+   display: inline-block;
+   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(209, 141, 82,1)), url(cross.png); 
+   padding: 3px;
+   width: 230px;
+   border: 1px solid rgb(191, 191, 191);
+}
+
+input {
+   display: inline-block;
+   width: 100%;
+    
+}
+
+input#redValue, input#greenValue, input#blueValue, input#alphaValue {
+   display: none;
+}
+
+div#outcome {
+   position: absolute;
+   top: 90px;
+   left: 400px;
+   font-size: 22px;
+}
+
+div#backbox {
+   background-color: rgb(255, 0, 0);
+   width: 200px;
+   height: 165px;
+   position: absolute;
+   top: 70px;
+   left: 100px;
+   z-index: 1;
+}
+div#outcomebox {
+   position: absolute;
+   width: 220px;
+   height: 220px;
+   border: 1px solid rgb(191, 191, 191);
+   background-color:  rgba(255, 0, 0, 0.5);
+   margin-bottom: 10px;
+   margin-top: 40px;
+   z-index: 2;
+}
+
+div#outcomecode {
+   line-height: 1.4em;
+   position: absolute;
+   top: 270px;
+   width: 250px;
+}
+   

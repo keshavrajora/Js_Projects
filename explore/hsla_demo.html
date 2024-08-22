@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <meta charset="utf-8" />
+   <title>HSLA Color Picker</title>
+   <link href="hsla_base.css" rel="stylesheet" />
+   <link href="hsla_layout.css" rel="stylesheet" />
+   <script src="hsla_demo.js" async></script>
+</head>
+
+<body>
+   <h1>The HSLA Color Model</h1>
+   <div id="hueBox">
+      <img src="hue_ring.png" alt="" id="hueRing" />
+      <img src="hue_circle.png" alt="" id="hueCircle" />
+      <label>Hue</label><input type="range" min="0" max="360" step="1" id="hueSlider" value="0" />      
+   </div>
+   
+   <div id="satContainer">
+      <label>Saturation</label>
+      <div id="satBox">
+         <input type="range" min="0" max="100" step="1" id="saturationSlider" value="100" />
+      </div>
+   </div>
+   
+   <div id="lightContainer">
+      <label>Lightness</label>  
+      <div id="lightBox">
+         <input type="range" min="0" max="100" step="1" id="lightSlider" value="50" />
+      </div>  
+   </div> 
+   
+   <div id="alphaContainer">
+      <label>Alpha</label>  
+      <div id="alphaBox">
+         <input type="range" min="0" max="1" step="0.01" id="alphaSlider" value="0.5" />
+      </div>  
+   </div>     
+   <div id="outcome">
+      <div id="backbox"></div>    
+      <div id="outcomebox"></div>
+      <div id="outcomecode">hsla(0, 100%, 50%, 0.5)<br />rgba(255, 0, 0, 0.5)</div>
+   </div>   
+      
+   <input type="text" id="hueValue" value="0" hidden />
+   <input type="text" id="satValue" value="100" hidden/>
+   <input type="text" id="lightValue" value="50" hidden/>
+   <input type="text" id="alphaValue" value="0.5" hidden />    
+</body>
+</html>

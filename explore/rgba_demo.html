@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <meta charset="utf-8" />
+   <title>RGBA Color Picker</title>
+   <link href="rgba_base.css" rel="stylesheet" />
+   <link href="rgba_layout.css" rel="stylesheet" />
+   <script src="rgba_demo.js" async></script>
+</head>
+
+<body>
+   <h1>The RGBA Color Model</h1>
+   
+   <div id="redContainer">
+      <label>Red</label>
+      <div id="redBox">
+         <input type="range" min="0" max="255" step="1" id="redSlider" value="255" />
+      </div>
+   </div>
+   
+   <div id="greenContainer">
+      <label>Green</label>  
+      <div id="greenBox">
+         <input type="range" min="0" max="255" step="1" id="greenSlider" value="0" />
+      </div>  
+   </div> 
+   
+   <div id="blueContainer">
+      <label>Blue</label>  
+      <div id="blueBox">
+         <input type="range" min="0" max="255" step="1" id="blueSlider" value="0" />
+      </div>  
+   </div> 
+
+   <div id="alphaContainer">
+      <label>Alpha</label>  
+      <div id="alphaBox">
+         <input type="range" min="0" max="1" step="0.01" id="alphaSlider" value="0.5" />
+      </div>  
+   </div> 
+     
+   <div id="outcome">
+      <div id="backbox"></div>      
+      <div id="outcomebox"></div>     
+      <div id="outcomecode">rgba(255, 0, 0, 0.5)</div>
+   </div>   
+      
+   <input type="text" id="redValue" value="255" hidden />
+   <input type="text" id="greenValue" value="0" hidden/>
+   <input type="text" id="blueValue" value="0" hidden/>
+   <input type="text" id="alphaValue" value="0.5" hidden /> 
+</body>
+</html>

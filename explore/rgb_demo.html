@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <meta charset="utf-8" />
+   <title>RGB Color Picker</title>
+   <link href="rgb_base.css" rel="stylesheet" />
+   <link href="rgb_layout.css" rel="stylesheet" />
+   <script src="rgb_demo.js" async></script>
+</head>
+
+<body>
+   <h1>The RGB Color Model</h1>
+   
+   <div id="redContainer">
+      <label>Red</label>
+      <div id="redBox">
+         <input type="range" min="0" max="255" step="1" id="redSlider" value="255" />
+      </div>
+   </div>
+   
+   <div id="greenContainer">
+      <label>Green</label>  
+      <div id="greenBox">
+         <input type="range" min="0" max="255" step="1" id="greenSlider" value="0" />
+      </div>  
+   </div> 
+   
+   <div id="blueContainer">
+      <label>Blue</label>  
+      <div id="blueBox">
+         <input type="range" min="0" max="255" step="1" id="blueSlider" value="0" />
+      </div>  
+   </div>    
+     
+   <div id="outcome">
+      <div id="outcomebox"></div>
+      <div id="outcomecode">rgb(255, 0, 0)<br />#FF0000</div>
+   </div>   
+      
+   <input type="text" id="redValue" value="255" hidden />
+   <input type="text" id="greenValue" value="0" hidden/>
+   <input type="text" id="blueValue" value="0" hidden/>
+</body>
+</html>

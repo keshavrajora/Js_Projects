@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+
+
+html {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+   height: 100%;
+   font-size: 18px;
+   color: rgb(101, 101, 101);
+}
+
+body {
+   padding: 50px;
+   position: relative;
+}
+
+h1 {
+   font-weight: normal;
+   font-size: 2.4em;
+   margin-top: 10px;
+   margin-left: 360px;
+   padding-bottom: 40px;
+}
+
+label {
+   display: inline-block;
+   width: 90px;
+}
+
+div#hueBox {
+  position:relative;
+   margin-bottom: 10px;
+}
+
+img#hueRing {
+   display: block;
+   width: 150px;
+   margin-bottom: 10px;
+   margin-top: 20px;
+   margin-left: 125px;
+
+}
+
+img#hueCircle {
+   position: absolute;
+   display: block;
+   top: 66px;
+   left: 190px;
+   transform: translate(0px, -66px);
+}
+
+img#hueCircle2 {
+   position: absolute;
+   display: block;
+   top: 66px;
+   left: 190px;
+   transform: translate(56.29px, 32.5px);
+}
+
+img#hueCircle3 {
+   position: absolute;
+   display: block;
+   top: 66px;
+   left: 190px;
+   transform: translate(-56.29px, 32.5px);
+}
+
+input#hueSlider {
+   display: inline-block;
+   width: 200px;
+}
+
+div#satBox {
+   display: inline-block;
+   background: linear-gradient(to right, hsl(0, 0%, 50%), hsl(0, 100%, 50%)); 
+   padding: 3px;
+   width: 200px;
+   border: 1px solid rgb(191, 191, 191);
+}
+
+
+input#saturationSlider {
+   display: inline-block;
+   width: 100%;
+    
+}
+
+div#satContainer {
+   margin-bottom: 10px;
+}
+
+div#lightBox {
+   display: inline-block;
+   width: 200px;
+   background: linear-gradient(to right, hsl(0, 100%, 0%), hsl(0, 100%, 50%), hsl(0, 100%, 100%)); 
+   padding: 3px;
+   border: 1px solid rgb(191, 191, 191);   
+}
+
+
+input#lightSlider {
+   display: inline-block;
+   width: 100%;
+    
+}
+
+div#outcome {
+   position: absolute;
+   top: 90px;
+   left: 400px;
+   font-size: 22px;
+}
+
+div#outcomebox {
+   width: 170px;
+   height: 220px;
+   border: 1px solid rgb(191, 191, 191);
+   background-color: hsl(0, 100%, 50%);
+   margin-bottom: 10px;
+   margin-top: 40px;
+}
+
+div#outcomebox2 {
+   width: 170px;
+   height: 220px;
+   border: 1px solid rgb(191, 191, 191);
+   background-color: hsl(120, 100%, 50%);
+   margin-bottom: 10px;
+   margin-top: -230px;
+   margin-left: 170px;
+}
+
+div#outcomebox3 {
+   width: 170px;
+   height: 220px;
+   border: 1px solid rgb(191, 191, 191);
+   background-color: hsl(240, 100%, 50%);
+   margin-bottom: 10px;
+   margin-top: -230px;
+   margin-left: 340px;
+}
+
+div#outcomecode {
+   line-height: 1.4em;
+}
+
+td {
+   width: 169px;
+   font-size: 0.8em;
+}
+   

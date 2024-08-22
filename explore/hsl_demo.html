@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <meta charset="utf-8" />
+   <title>HSL Color Picker</title>
+   <link href="hsl_base.css" rel="stylesheet" />
+   <link href="hsl_layout.css" rel="stylesheet" />
+   <script src="hsl_demo.js" async></script>
+</head>
+
+<body>
+   <h1>The HSL Color Model</h1>
+   <div id="hueBox">
+      <img src="hue_ring.png" alt="" id="hueRing" />
+      <img src="hue_circle.png" alt="" id="hueCircle" />
+      <label>Hue</label><input type="range" min="0" max="360" step="1" id="hueSlider" value="0" />      
+   </div>
+   
+   <div id="satContainer">
+      <label>Saturation</label>
+      <div id="satBox">
+         <input type="range" min="0" max="100" step="1" id="saturationSlider" value="100" />
+      </div>
+   </div>
+   
+   <div id="lightContainer">
+      <label>Lightness</label>  
+      <div id="lightBox">
+         <input type="range" min="0" max="100" step="1" id="lightSlider" value="50" />
+      </div>  
+   </div> 
+     
+   <div id="outcome">
+      <div id="outcomebox"></div>
+      <div id="outcomecode">hsl(0, 100%, 50%)<br />rgb(255, 0, 0)</div>
+   </div>   
+      
+   <input type="text" id="hueValue" value="0" hidden />
+   <input type="text" id="satValue" value="100" hidden/>
+   <input type="text" id="lightValue" value="50" hidden/>
+</body>
+</html>

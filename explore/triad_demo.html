@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <meta charset="utf-8" />
+   <title>Triadic Colors</title>
+   <link href="triad_base.css" rel="stylesheet" />
+   <link href="triad_layout.css" rel="stylesheet" />
+   <script src="triad_demo.js" async></script>
+</head>
+
+<body>
+   <h1>Triadic Colors</h1>
+   <div id="hueBox">
+      <img src="hue_ring.png" alt="" id="hueRing" />
+      <img src="hue_circle.png" alt="" id="hueCircle" />
+      <img src="hue_circle.png" alt="" id="hueCircle2" /> 
+      <img src="hue_circle.png" alt="" id="hueCircle3" />      
+      <label>Hue</label><input type="range" min="0" max="360" step="1" id="hueSlider" value="0" />      
+   </div>
+   
+   <div id="satContainer">
+      <label>Saturation</label>
+      <div id="satBox">
+         <input type="range" min="0" max="100" step="1" id="saturationSlider" value="100" />
+      </div>
+   </div>
+   
+   <div id="lightContainer">
+      <label>Lightness</label>  
+      <div id="lightBox">
+         <input type="range" min="0" max="100" step="1" id="lightSlider" value="50" />
+      </div>  
+   </div> 
+     
+   <div id="outcome">
+      <div id="outcomebox"></div>
+      <div id="outcomebox2"></div>
+      <div id="outcomebox3"></div>       
+      <div id="outcomecode">
+         <table>
+            <tr>
+               <td id="code1">hsl(0, 100%, 50%)</td>
+               <td id="code2">hsl(120, 100%, 50%)</td>
+               <td id="code3">hsl(240, 100%, 50%)</td>               
+            </tr>
+            <tr>
+               <td id="code4">rgb(255, 0, 0)</td>
+               <td id="code5">rgb(0, 255, 0)</td>
+               <td id="code6">rgb(0, 0, 255)</td>               
+            </tr>
+         </table>
+      </div>
+   </div>   
+      
+   <input type="text" id="hueValue" value="0" hidden />
+   <input type="text" id="satValue" value="100" hidden/>
+   <input type="text" id="lightValue" value="50" hidden/>
+</body>
+</html>
