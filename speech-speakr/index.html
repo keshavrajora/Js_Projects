@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speak</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url(img4.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+    }
+
+    div {
+      width: 200px;
+      height: 50px;
+      padding: 20px;
+      border-radius: 5px solid black; 
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #fff;
+      outline: none;
+      background-color: transparent;
+      color: #fff;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-left: 13px;
+      margin-top: 10px;
+      border: none;
+      outline: none;
+      background-color: #f00;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: transparent;
+      border: 2px solid rgb(119, 112, 112);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input id="input">
+    <button>Speak</button>
+  </div>
+</body>
+<script>
+  const input = document.getElementById('input');
+  const btn = document.querySelector('button');
+
+  btn.addEventListener('click', () => {
+  let speech = new SpeechSynthesisUtterance(input.value);
+  speechSynthesis.speak(speech);
+});
+</script>
+</html>
